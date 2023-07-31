@@ -68,7 +68,7 @@ const paleon = new PaleonClient({
 const logs = await paleon.read({ limit: 10 });
 console.log(logs);
 
-// Stream logs
+// Stream logs 
 const stream = paleon.listen();
 for await (const record of stream) {
   console.log(record);
